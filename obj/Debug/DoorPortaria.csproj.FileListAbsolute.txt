@@ -1,0 +1,9 @@
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\DoorPortaria.exe.config
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\DoorPortaria.exe
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\DoorPortaria.pdb
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.csprojAssemblyReference.cache
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.Home.resources
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.Properties.Resources.resources
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.csproj.GenerateResource.cache
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.exe
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.pdb
