@@ -32,7 +32,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonAnotacoes = new System.Windows.Forms.Button();
             this.buttonMoradores = new System.Windows.Forms.Button();
-            this.buttonCadastrarMorador = new System.Windows.Forms.Button();
             this.buttonPesquisar = new System.Windows.Forms.Button();
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.buttonVisitantes = new System.Windows.Forms.Button();
@@ -42,6 +41,7 @@
             this.buttonStatus = new System.Windows.Forms.Button();
             this.buttonContatos = new System.Windows.Forms.Button();
             this.buttonUsuarios = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +50,9 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonAnotacoes);
             this.panel1.Controls.Add(this.buttonMoradores);
-            this.panel1.Controls.Add(this.buttonCadastrarMorador);
             this.panel1.Controls.Add(this.buttonPesquisar);
             this.panel1.Controls.Add(this.buttonDashboard);
             this.panel1.Controls.Add(this.buttonVisitantes);
@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.buttonUsuarios);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 640);
+            this.panel1.Size = new System.Drawing.Size(200, 642);
             this.panel1.TabIndex = 0;
             // 
             // buttonAnotacoes
@@ -80,9 +80,9 @@
             this.buttonAnotacoes.ForeColor = System.Drawing.Color.White;
             this.buttonAnotacoes.Image = ((System.Drawing.Image)(resources.GetObject("buttonAnotacoes.Image")));
             this.buttonAnotacoes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAnotacoes.Location = new System.Drawing.Point(11, 530);
+            this.buttonAnotacoes.Location = new System.Drawing.Point(6, 519);
             this.buttonAnotacoes.Name = "buttonAnotacoes";
-            this.buttonAnotacoes.Size = new System.Drawing.Size(189, 41);
+            this.buttonAnotacoes.Size = new System.Drawing.Size(189, 40);
             this.buttonAnotacoes.TabIndex = 39;
             this.buttonAnotacoes.Text = "Anotações";
             this.buttonAnotacoes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -103,34 +103,13 @@
             this.buttonMoradores.ForeColor = System.Drawing.Color.White;
             this.buttonMoradores.Image = ((System.Drawing.Image)(resources.GetObject("buttonMoradores.Image")));
             this.buttonMoradores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMoradores.Location = new System.Drawing.Point(3, 158);
+            this.buttonMoradores.Location = new System.Drawing.Point(6, 158);
             this.buttonMoradores.Name = "buttonMoradores";
-            this.buttonMoradores.Size = new System.Drawing.Size(197, 45);
+            this.buttonMoradores.Size = new System.Drawing.Size(189, 40);
             this.buttonMoradores.TabIndex = 30;
             this.buttonMoradores.Text = "Moradores";
             this.buttonMoradores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMoradores.UseVisualStyleBackColor = false;
-            // 
-            // buttonCadastrarMorador
-            // 
-            this.buttonCadastrarMorador.BackColor = System.Drawing.Color.Gray;
-            this.buttonCadastrarMorador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonCadastrarMorador.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonCadastrarMorador.FlatAppearance.BorderSize = 0;
-            this.buttonCadastrarMorador.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.buttonCadastrarMorador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonCadastrarMorador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonCadastrarMorador.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCadastrarMorador.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCadastrarMorador.ForeColor = System.Drawing.Color.White;
-            this.buttonCadastrarMorador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonCadastrarMorador.Location = new System.Drawing.Point(11, 196);
-            this.buttonCadastrarMorador.Name = "buttonCadastrarMorador";
-            this.buttonCadastrarMorador.Size = new System.Drawing.Size(189, 40);
-            this.buttonCadastrarMorador.TabIndex = 30;
-            this.buttonCadastrarMorador.Text = "+Moradores";
-            this.buttonCadastrarMorador.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonCadastrarMorador.UseVisualStyleBackColor = false;
             // 
             // buttonPesquisar
             // 
@@ -145,7 +124,7 @@
             this.buttonPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPesquisar.ForeColor = System.Drawing.Color.White;
             this.buttonPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonPesquisar.Location = new System.Drawing.Point(11, 404);
+            this.buttonPesquisar.Location = new System.Drawing.Point(6, 393);
             this.buttonPesquisar.Name = "buttonPesquisar";
             this.buttonPesquisar.Size = new System.Drawing.Size(189, 40);
             this.buttonPesquisar.TabIndex = 38;
@@ -185,7 +164,7 @@
             this.buttonVisitantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonVisitantes.ForeColor = System.Drawing.Color.White;
             this.buttonVisitantes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonVisitantes.Location = new System.Drawing.Point(11, 242);
+            this.buttonVisitantes.Location = new System.Drawing.Point(6, 209);
             this.buttonVisitantes.Name = "buttonVisitantes";
             this.buttonVisitantes.Size = new System.Drawing.Size(189, 40);
             this.buttonVisitantes.TabIndex = 31;
@@ -205,9 +184,9 @@
             this.buttonLogoff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogoff.ForeColor = System.Drawing.Color.White;
             this.buttonLogoff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLogoff.Location = new System.Drawing.Point(11, 488);
+            this.buttonLogoff.Location = new System.Drawing.Point(6, 477);
             this.buttonLogoff.Name = "buttonLogoff";
-            this.buttonLogoff.Size = new System.Drawing.Size(189, 41);
+            this.buttonLogoff.Size = new System.Drawing.Size(189, 40);
             this.buttonLogoff.TabIndex = 36;
             this.buttonLogoff.Text = "Logoff";
             this.buttonLogoff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -225,9 +204,9 @@
             this.buttonSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSair.ForeColor = System.Drawing.Color.White;
             this.buttonSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSair.Location = new System.Drawing.Point(11, 577);
+            this.buttonSair.Location = new System.Drawing.Point(6, 566);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(189, 41);
+            this.buttonSair.Size = new System.Drawing.Size(189, 40);
             this.buttonSair.TabIndex = 37;
             this.buttonSair.Text = "Sair";
             this.buttonSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -245,7 +224,7 @@
             this.buttonOcorrencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOcorrencias.ForeColor = System.Drawing.Color.White;
             this.buttonOcorrencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonOcorrencias.Location = new System.Drawing.Point(11, 320);
+            this.buttonOcorrencias.Location = new System.Drawing.Point(6, 309);
             this.buttonOcorrencias.Name = "buttonOcorrencias";
             this.buttonOcorrencias.Size = new System.Drawing.Size(189, 40);
             this.buttonOcorrencias.TabIndex = 33;
@@ -265,11 +244,11 @@
             this.buttonStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStatus.ForeColor = System.Drawing.Color.White;
             this.buttonStatus.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonStatus.Location = new System.Drawing.Point(11, 283);
+            this.buttonStatus.Location = new System.Drawing.Point(6, 255);
             this.buttonStatus.Name = "buttonStatus";
             this.buttonStatus.Size = new System.Drawing.Size(189, 40);
             this.buttonStatus.TabIndex = 32;
-            this.buttonStatus.Text = "Status";
+            this.buttonStatus.Text = "Entrada";
             this.buttonStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonStatus.UseVisualStyleBackColor = false;
             // 
@@ -285,7 +264,7 @@
             this.buttonContatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonContatos.ForeColor = System.Drawing.Color.White;
             this.buttonContatos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonContatos.Location = new System.Drawing.Point(11, 362);
+            this.buttonContatos.Location = new System.Drawing.Point(6, 351);
             this.buttonContatos.Name = "buttonContatos";
             this.buttonContatos.Size = new System.Drawing.Size(189, 40);
             this.buttonContatos.TabIndex = 34;
@@ -305,7 +284,7 @@
             this.buttonUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuarios.ForeColor = System.Drawing.Color.White;
             this.buttonUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonUsuarios.Location = new System.Drawing.Point(11, 446);
+            this.buttonUsuarios.Location = new System.Drawing.Point(6, 435);
             this.buttonUsuarios.Name = "buttonUsuarios";
             this.buttonUsuarios.Size = new System.Drawing.Size(189, 40);
             this.buttonUsuarios.TabIndex = 35;
@@ -313,16 +292,34 @@
             this.buttonUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonUsuarios.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(6, 301);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 40);
+            this.button1.TabIndex = 40;
+            this.button1.Text = "Saida";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1245, 629);
+            this.ClientSize = new System.Drawing.Size(1264, 631);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home-DooRPortaria";
@@ -338,7 +335,6 @@
         private System.Windows.Forms.Button buttonDashboard;
         private System.Windows.Forms.Button buttonAnotacoes;
         private System.Windows.Forms.Button buttonMoradores;
-        private System.Windows.Forms.Button buttonCadastrarMorador;
         private System.Windows.Forms.Button buttonPesquisar;
         private System.Windows.Forms.Button buttonVisitantes;
         private System.Windows.Forms.Button buttonLogoff;
@@ -347,6 +343,7 @@
         private System.Windows.Forms.Button buttonStatus;
         private System.Windows.Forms.Button buttonContatos;
         private System.Windows.Forms.Button buttonUsuarios;
+        private System.Windows.Forms.Button button1;
     }
 }
 

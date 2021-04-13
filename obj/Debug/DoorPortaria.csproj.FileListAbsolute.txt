@@ -7,3 +7,6 @@ C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.Pr
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.csproj.GenerateResource.cache
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.exe
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.pdb
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\BDPortaria.mdf
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\BDPortaria_log.ldf
+C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\Projeto_Portaria.Form_moradores.resources

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto_Portaria;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace DoorPortaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home());
+            Application.Run(new Form_moradores());
         }
     }
 }
