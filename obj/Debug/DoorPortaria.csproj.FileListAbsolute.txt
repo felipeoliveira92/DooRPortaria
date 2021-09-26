@@ -10,3 +10,20 @@ C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\DoorPortaria.pd
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\BDPortaria.mdf
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\bin\Debug\BDPortaria_log.ldf
 C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\obj\Debug\Projeto_Portaria.Form_moradores.resources
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\BDPortaria.mdf
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\BDPortaria_log.ldf
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\DoorPortaria.exe.config
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\DoorPortaria.exe
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\DoorPortaria.pdb
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.csproj.AssemblyReference.cache
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\Projeto_Portaria.Form_moradores.resources
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.Home.resources
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.Properties.Resources.resources
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.csproj.GenerateResource.cache
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.exe
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.pdb
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\NetSDKCS.dll
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\bin\Debug\NetSDKCS.pdb
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.Form1.resources
+C:\Users\Felipe\Documents\Projetos\DooRPortaria\obj\Debug\DoorPortaria.csproj.CopyComplete

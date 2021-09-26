@@ -17,7 +17,7 @@ namespace DoorPortaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_moradores());
+            Application.Run(new Form1());
         }
     }
 }
