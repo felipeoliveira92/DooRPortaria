@@ -47,7 +47,6 @@ namespace DoorPortaria
             this.save_button = new System.Windows.Forms.Button();
             this.capture_button = new System.Windows.Forms.Button();
             this.start_realplay_button = new System.Windows.Forms.Button();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.realplay_pictureBox)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -136,7 +135,7 @@ namespace DoorPortaria
             this.realplay_pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.realplay_pictureBox.Location = new System.Drawing.Point(4, 71);
             this.realplay_pictureBox.Name = "realplay_pictureBox";
-            this.realplay_pictureBox.Size = new System.Drawing.Size(562, 445);
+            this.realplay_pictureBox.Size = new System.Drawing.Size(562, 324);
             this.realplay_pictureBox.TabIndex = 20;
             this.realplay_pictureBox.TabStop = false;
             // 
@@ -226,7 +225,7 @@ namespace DoorPortaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 616);
+            this.ClientSize = new System.Drawing.Size(812, 417);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.port_textBox);
             this.Controls.Add(this.label9);
@@ -269,6 +268,5 @@ namespace DoorPortaria
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.Button capture_button;
         private System.Windows.Forms.Button start_realplay_button;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

@@ -9,5 +9,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="C:\Users\felipe rabelo\Documents\Projetos\DoorPortaria\BDPortaria.mdf";Integrated Security=True</Value>
     </Setting>
+    <Setting Name="foto" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

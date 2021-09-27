@@ -17,6 +17,15 @@ namespace DoorPortaria
             InitializeComponent();
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            picboxHome.ImageLocation = DoorPortaria.Properties.Settings.Default.foto;
+        }
+
+        private void buttonMoradores_Click(object sender, EventArgs e)
+        {
+            Form1 capture = new Form1();
+            capture.ShowDialog();
+        }
     }
 }

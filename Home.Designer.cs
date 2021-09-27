@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,7 +43,10 @@
             this.buttonStatus = new System.Windows.Forms.Button();
             this.buttonContatos = new System.Windows.Forms.Button();
             this.buttonUsuarios = new System.Windows.Forms.Button();
+            this.picboxHome = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,6 +134,7 @@
             this.buttonMoradores.Text = "Moradores";
             this.buttonMoradores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMoradores.UseVisualStyleBackColor = false;
+            this.buttonMoradores.Click += new System.EventHandler(this.buttonMoradores_Click);
             // 
             // buttonPesquisar
             // 
@@ -312,12 +317,25 @@
             this.buttonUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonUsuarios.UseVisualStyleBackColor = false;
             // 
+            // picboxHome
+            // 
+            this.picboxHome.Location = new System.Drawing.Point(207, 12);
+            this.picboxHome.Name = "picboxHome";
+            this.picboxHome.Size = new System.Drawing.Size(237, 204);
+            this.picboxHome.TabIndex = 1;
+            this.picboxHome.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1132, 651);
+            this.Controls.Add(this.picboxHome);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
@@ -325,6 +343,7 @@
             this.Text = "Home-DooRPortaria";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picboxHome)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,6 +363,8 @@
         private System.Windows.Forms.Button buttonContatos;
         private System.Windows.Forms.Button buttonUsuarios;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox picboxHome;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

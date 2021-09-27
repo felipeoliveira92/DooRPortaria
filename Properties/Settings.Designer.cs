@@ -33,5 +33,17 @@ namespace DoorPortaria.Properties {
                 return ((string)(this["BDPortaria"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string foto {
+            get {
+                return ((string)(this["foto"]));
+            }
+            set {
+                this["foto"] = value;
+            }
+        }
     }
 }

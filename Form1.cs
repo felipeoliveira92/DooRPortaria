@@ -52,7 +52,7 @@ namespace DoorPortaria
                 }
                 catch
                 {
-                    MessageBox.Show("Input port error(输入端口错误)!");
+                    MessageBox.Show("Input port error!");
                     return;
                 }
                 m_DeviceInfo = new NET_DEVICEINFO_Ex();
@@ -64,7 +64,6 @@ namespace DoorPortaria
                 }
                 LoginUI();
                 start_realplay_button.Enabled = true;
-                MessageBox.Show("FOI!");
             }
             else
             {
@@ -158,7 +157,7 @@ namespace DoorPortaria
             start_realplay_button.Text = "StartReal(开始监视)";
             realplay_pictureBox.Refresh();
             save_button.Text = "StartSave(开始保存)";
-            this.Text = "RealPlayAndPTZDemo(实时预览与云台Demo)";
+            this.Text = "DooR Portaria ---";
         }
 
         private void LoginUI()
@@ -169,7 +168,7 @@ namespace DoorPortaria
                 step_comboBox.Items.Add(i);
             }
             step_comboBox.SelectedIndex = SpeedValue - 1;*/
-            login_button.Text = "Logout(登出)";
+            login_button.Text = "Logout";
             channel_comboBox.Enabled = true;
             streamtype_comboBox.Enabled = true;
             start_realplay_button.Enabled = true;
@@ -192,11 +191,11 @@ namespace DoorPortaria
             {
                 channel_comboBox.Items.Add(i);
             }
-            streamtype_comboBox.Items.Add("Main Stream(主码流)");
-            streamtype_comboBox.Items.Add("Extra Stream(辅码流)");
+            streamtype_comboBox.Items.Add("Main Stream");
+            streamtype_comboBox.Items.Add("Extra Stream");
             channel_comboBox.SelectedIndex = 0;
             streamtype_comboBox.SelectedIndex = 0;
-            this.Text = "RealPlayAndPTZDemo(实时预览与云台Demo) --- Online(在线)";
+            this.Text = "DooR Portaria --- Online";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -227,7 +226,7 @@ namespace DoorPortaria
 
         private void UpdateDisConnectUI()
         {
-            this.Text = "RealPlayAndPTZDemo(实时预览与云台Demo) --- Offline(离线)";
+            this.Text = "DooR Portaria --- Offline";
         }
 
         private void ReConnectCallBack(IntPtr lLoginID, IntPtr pchDVRIP, int nDVRPort, IntPtr dwUser)
@@ -236,7 +235,7 @@ namespace DoorPortaria
         }
         private void UpdateReConnectUI()
         {
-            this.Text = "RealPlayAndPTZDemo(实时预览与云台Demo) --- Online(在线)";
+            this.Text = "DooR Portaria --- Online";
         }
 
         private void RealDataCallBackEx(IntPtr lRealHandle, uint dwDataType, IntPtr pBuffer, uint dwBufSize, IntPtr param, IntPtr dwUser)
@@ -270,33 +269,34 @@ namespace DoorPortaria
 
         private void capture_button_Click(object sender, EventArgs e)
         {
-            if(saveFileDialog1.ShowDialog()==DialogResult.OK)
-            {
-                #region client capture 本地抓图
-                if (IntPtr.Zero == m_RealPlayID)
-                {
-                    MessageBox.Show(this, "Please realplay first(请先打开监视)!");
-                    return;
-                }
-                //string path = AppDomain.CurrentDomain.BaseDirectory + "capture";
-                //string path = saveFileDialog1.FileName;
-                /*
-                if (!Directory.Exists(path))
-                {
-                    Directory.CreateDirectory(path);
-                }*/
-                //string filePath = path + "\\" + "client" + m_SnapSerialNum.ToString() + ".jpg";
-                string filePath = saveFileDialog1.Title + ".jpg";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "fotos";
 
-                bool result = NETClient.CapturePicture(m_RealPlayID, filePath, EM_NET_CAPTURE_FORMATS.JPEG);
-                if (!result)
-                {
-                    MessageBox.Show(this, NETClient.GetLastError());
-                    return;
-                }
-                MessageBox.Show(this, "client capture success(本地抓图成功)!");
-                #endregion
+            #region client capture 本地抓图
+            if (IntPtr.Zero == m_RealPlayID)
+            {
+                MessageBox.Show(this, "Please realplay first!");
+                return;
             }
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);
+            }
+            DateTime now = DateTime.Now;
+            //string filePath = path + "\\" + "client" + m_SnapSerialNum.ToString() + ".jpg";
+            string filePath = path + "\\" + string.Format("{0}-{1}-{2}-{3}-{4}", now.Day, now.Month, now.Year, now.Hour, now.Minute) + ".jpg";
+
+            bool result = NETClient.CapturePicture(m_RealPlayID, filePath, EM_NET_CAPTURE_FORMATS.JPEG);
+            if (!result)
+            {
+                MessageBox.Show(this, NETClient.GetLastError());
+                return;
+            }
+            MessageBox.Show(this, "client capture success!");
+            #endregion
+
+            DoorPortaria.Properties.Settings.Default.foto = filePath;
+            
         }
     }
 }
